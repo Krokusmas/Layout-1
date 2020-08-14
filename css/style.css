@@ -1,6 +1,29 @@
 * {
   box-sizing: border-box;
 }
+@font-face{
+font-family: 'HelveticaNeueCyr';
+src: url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+@font-face{
+font-family: 'HelveticaNeueCyr';
+src: url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}
+@font-face{
+font-family: 'HelveticaNeueCyr';
+src: url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype');
+font-weight: 900;
+font-style: normal;
+}
+body {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-size: 16px;
+}
 .wrapper {
   padding: 15px;
 }
@@ -10,6 +33,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
 }
 .header-logo {
@@ -26,14 +50,11 @@
   height: 35px;
   width: 35px;
 }
-
-/*li {
-  display: block;
-  transition-duration: 0.5s;
-}*/
-/*li:hover {
-  cursor: pointer;
-}*/
+.logo-description {
+  font-size: 13px;
+  color: grey;
+  align-self: right;
+}
 ul li ul {
   visibility: hidden;
   opacity: 0;
