@@ -4,7 +4,13 @@
 @font-face{
 font-family: 'HelveticaNeueCyr';
 src: url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
-font-weight: 400;
+font-weight: 300;
+font-style: normal;
+}
+@font-face{
+font-family: 'HelveticaNeueCyr';
+src: url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+font-weight: 500;
 font-style: normal;
 }
 @font-face{
@@ -21,8 +27,10 @@ font-style: normal;
 }
 body {
   font-family: HelveticaNeueCyr;
-  font-style: normal;
+  font-weight: 300;
   font-size: 16px;
+  max-width: 1170px;
+  margin: auto;
 }
 .wrapper {
   padding: 15px;
@@ -38,7 +46,7 @@ body {
   width: 230px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-right: 65px;
 }
 .header-menu-logo {
   height: 35px;
@@ -52,6 +60,24 @@ body {
 .header-action {
   display: none;
 }
+.tel-num-block {
+  display: none;
+  margin-left: auto;
+}
+.contact-us {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.tel-num {
+  font-weight: 300;  
+}
+.navigation-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
 .nav {
   display: flex;
   height: 100%;
@@ -59,6 +85,9 @@ body {
 }
 .nav__menu-list {
   position: relative;
+}
+ul li li {
+  font-weight: 500;
 }
 ul li ul {
   visibility: hidden;
@@ -109,10 +138,16 @@ ul li ul li {
     flex-direction: column;
     align-items: center;
   }
+  .header-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
   .header-action {
     display: block;
   }
   .nav {
+    flex-direction: column;
+    align-items: flex-start;
     width: 264px;
     height: 100%;
     position: fixed;
@@ -151,5 +186,10 @@ ul li ul li {
   .nav-scrim--active {
     visibility: visible;
     opacity: 1;
+  }
+}
+@media (min-width: 1110px) {
+  .tel-num-block {
+    display: inline-block;
   }
 }
