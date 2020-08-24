@@ -19,36 +19,33 @@
             <p class="logo-description">клиника медицинской косметологии</p>
           </div>
           <nav class="navigation-block">
-
             <ul class="header-nav nav js-nav">
-
               <li class="nav__link-box nav__main-list-link">
                 <a class="nav__link" href="#">О клинике</a>
               </li>
               <li class="nav__link-box nav__main-list-link">
                 <a class="nav__link" href="#">Что мы лечим</a>
               </li>
-              <li class="nav__link-box nav__menu-list nav__main-list-link">
+              <li class="nav__link-box nav__menu-list nav__main-list-link js-nav__middle-menu-trigger">
                 <a class="nav__link" href="#">Услуги</a>
-
-                <ul class="nav__middle-menu-drop">
+                <ul class="nav__middle-menu-drop js-nav__middle-menu-drop">
                   <li class="nav__link-box nav__middle-list-link nav__middle-link-arrow">
                     <a class="nav__link nav__middle-link" href="#">Дерматология</a>
                   </li>
-                  <li class="nav__link-box nav__middle-link nav__middle-list-link nav__middle-link-arrow">
+                  <li class="nav__link-box nav__middle-link nav__middle-list-link nav__middle-link-arrow js-nav__lower-menu-trigger">
                     <a class="nav__link" href="#">Дерматоонкология</a>
-                    <ul class="nav__lower-menu-drop">
+                    <ul class="nav__lower-menu-drop js-nav__lower-menu-drop">
                       <li  class="nav__link-box">
-                        <a class="nav__link" href="#">Гемангиома лечение</a>
+                        <a class="nav__link nav__lower-menu-link" href="#">Гемангиома лечение</a>
                       </li>
                       <li class="nav__link-box">
-                        <a class="nav__link" href="#">Лечение базалиом</a>
+                        <a class="nav__link nav__lower-menu-link" href="#">Лечение базалиом</a>
                       </li>
                       <li class="nav__link-box">
-                        <a class="nav__link" href="#">Диагностика меланом</a>
+                        <a class="nav__link nav__lower-menu-link" href="#">Диагностика меланом</a>
                       </li>
                       <li class="nav__link-box">
-                        <a class="nav__link" href="#">Лечение ксангелазм (ксантом)</a>
+                        <a class="nav__link nav__lower-menu-link" href="#">Лечение ксангелазм (ксантом)</a>
                       </li>
                     </ul>
                   </li>
@@ -69,7 +66,6 @@
                   </li>
                 </ul>
               </li>
-
               <li class="nav__link-box nav__main-list-link">
                 <a class="nav__link" href="#">Цены на услуги</a>
               </li>
@@ -98,23 +94,22 @@
       <main>
         <content>
           <div class="slider middle">
-            
             <div class="slides">
-              <input type="radio" name="r" id="r1" checked>
-              <input type="radio" name="r" id="r2">
-              <input type="radio" name="r" id="r3">
-
+              <input type="radio" name="slider" id="r1" checked>
+              <input type="radio" name="slider" id="r2">
+              <input type="radio" name="slider" id="r3">
               <div class="slide s1"><img src="images/banner.png" alt=""></div>
               <div class="slide"><img src="images/banner.png" alt=""></div>
               <div class="slide"><img src="images/banner.png" alt=""></div>
 
+              <div class="slider-navigation" id="active">
+                <label for="r1" class="bar"></label>              
+                <label for="r2" class="bar"></label>              
+                <label for="r3" class="bar"></label>              
+              </div>
             </div>
 
-            <div class="slider-navigation">
-              <label for="r1" class="bar green"></label>              
-              <label for="r2" class="bar"></label>              
-              <label for="r3" class="bar"></label>              
-            </div>
+
 
           </div>
           
@@ -134,22 +129,7 @@
       </footer>
     </div>
 
-    <script>
-      (function () {
-        const nav = document.querySelector('.js-nav');
-        const navScrim = document.querySelector('.js-nav-scrim');
-        const navTrigger = document.querySelector('.js-nav-trigger');
-
-        navTrigger.addEventListener('click', function (e) {
-          nav.classList.add('nav--active');
-          navScrim.classList.add('nav-scrim--active');
-        }, false);
-        navScrim.addEventListener('click', function (e) {
-          nav.classList.remove('nav--active');
-          this.classList.remove('nav-scrim--active');
-        }, false);
-      }());
-    </script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
