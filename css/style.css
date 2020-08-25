@@ -34,6 +34,7 @@ body {
 }
 .wrapper {
   padding: 15px;
+  position: relative;
 }
 .header {
   margin-bottom: 595px;
@@ -71,7 +72,7 @@ body {
 }
 .tel-num {
   font-weight: 300;
-  font-size: 18px;  
+  font-size: 18px;
 }
 .navigation-block {
   display: flex;
@@ -118,12 +119,12 @@ body {
   content: "";
   position: absolute;
   border-right: 2px solid #C9DEC1;
-  border-bottom: 2px solid #C9DEC1; 
+  border-bottom: 2px solid #C9DEC1;
   height: 8px;
   width: 8px;
   top: 7px;
   right: 20px;
-  transform: rotate(-45deg); 
+  transform: rotate(-45deg);
 }
 .nav__lower-menu-drop {
   font-size: 13px;
@@ -138,7 +139,7 @@ body {
   background: rgba(243,243,243, 0.9);
 }
 .nav__lower-menu-link:hover {
-  border-bottom: 2px solid #78B660; 
+  border-bottom: 2px solid #78B660;
 }
 ul li li {
   font-weight: 500;
@@ -170,6 +171,51 @@ ul li ul li {
   text-decoration: none;
   color: black;
   line-height: 24px;
+}
+.ad {
+  position: absolute;
+  top: 208px;
+  left: 80px;
+  max-width: 435px;
+  height: 120px;
+  display: flex;
+  z-index: 90;
+}
+.ad-content {
+  display: flex;
+  flex-direction: column;
+}
+.ad-brace-left {
+  fill: #92C47F;
+  width: 40px;
+  height: 120px;
+}
+.ad-brace-right {
+  fill: #92C47F;
+  width: 40px;
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+.ad-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+}
+.ad-description {
+  font-size: 23px;
+  line-height: 32px;
+}
+.ad-content-row {
+  display: flex;
+  flex-direction: row;
+}
+.ad-percent {
+  color: #92C47F;
+  font-size: 52px;
+  font-weight: bold;
+  margin-left: 13px;
 }
 .main-text {
   text-align: center;
@@ -246,7 +292,7 @@ ul li ul li {
   .nav__lower-menu--active {
     visibility: visible;
     display: block;
-    background: rgba(243,243,243, 1); 
+    background: rgba(243,243,243, 1);
   }
   .nav-scrim {
     height: 100%;
@@ -271,6 +317,9 @@ ul li ul li {
     visibility: visible;
     opacity: 1;
   }
+  .ad {
+    display: none;
+  }
   .slider {
     display: none;
   }
@@ -281,7 +330,6 @@ ul li ul li {
     display: inline-block;
   }
 }
-
 .slider {
   width: 1170px;
   height: 860px;

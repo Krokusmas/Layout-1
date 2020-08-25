@@ -1,4 +1,5 @@
 'use strict';
+
 const navScrim = document.querySelector('.js-nav-scrim');
 (function () {
   const nav = document.querySelector('.js-nav');

@@ -6,7 +6,7 @@
     <title>CSS HW 2</title>
     <style>a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}button,input,optgroup,select,textarea{background:0 0;border:0;padding:0;margin:0;font:inherit;color:inherit;box-shadow:none}button{height:auto;cursor:pointer}button:focus{outline:0}button::-moz-focus-inner{outline:0;border:0;padding:0}
     </style>
-    <link rel="stylesheet" href="css/style.css" />   
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -84,52 +84,66 @@
           </nav>
           <button class="header-action js-nav-trigger" type="button">
             <svg  class="header-menu-logo" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-              <path d="M0 0h24v24H0z" fill="none"/>
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
             </svg>
           </button>
         </div>
       </header>
-
       <main>
-        <content>
-          <div class="slider middle">
-            <div class="slides">
-              <input type="radio" name="slider" id="r1" checked>
-              <input type="radio" name="slider" id="r2">
-              <input type="radio" name="slider" id="r3">
-              <div class="slide s1"><img src="images/banner.png" alt=""></div>
-              <div class="slide"><img src="images/banner.png" alt=""></div>
-              <div class="slide"><img src="images/banner.png" alt=""></div>
-
-              <div class="slider-navigation" id="active">
-                <label for="r1" class="bar"></label>              
-                <label for="r2" class="bar"></label>              
-                <label for="r3" class="bar"></label>              
-              </div>
+        <div class="ad">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg class="ad-brace-left" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 25 118" style="enable-background:new 0 0 25 118;" xml:space="preserve">
+          <path d="M24,116h-7.5c-4.4,0-4.5-4.5-4.5-5V78c0-0.3,0-8.4-3.2-12.6C6.6,62.5,4,60.2,2.6,59c1.4-1.2,4-3.5,6.2-6.4
+            C12,48.4,12,40.3,12,40V7c0-0.5,0.1-5,4.5-5H24c0.6,0,1-0.4,1-1s-0.4-1-1-1h-7.5C12,0,10,3.6,10,7v33c0,0.1,0,7.7-2.8,11.4
+            c-2.9,3.8-6.8,6.8-6.8,6.8l-0.1,0.1c0,0-0.1,0-0.1,0.1c0,0,0,0,0,0.1s-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2C0,59,0,59,0,59.1
+            c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0.1,0.2c0,0.1,0,0.1,0.1,0.2c0,0,0,0,0,0.1c0,0,0.1,0,0.1,0.1L0.4,60c0,0,3.9,3,6.8,6.8
+            C10,70.3,10,77.9,10,78v33c0,3.4,2,7,6.5,7H24c0.6,0,1-0.4,1-1S24.6,116,24,116z" />
+          </svg>
+          <div class="ad-content">
+            <h2 class="ad-title">Удаление папилом</h2>
+            <p class="ad-description">оплати единоразово 7 процедур -</p>
+            <div class="ad-content-row">
+              <p class="ad-description">получи скидку</p><span class="ad-percent">50%</span>
             </div>
-
-
-
           </div>
-          
-
-          <div class="main-text">
-            <h1 class="title">Здравствуйте, ищете профессиональный подход?</h1>
-            <p class="site-description-text">Если вам 20-30-40-50-60-70 и вы ищете ответы на вопросы, как прекрасно выглядеть и уверенно себя чувстовать - значит вы попали по адресу!</br>
-            Вы на сайте центра медицинской косметологии, который готов стать вашим проводником в мире эстетической медицины.</br>
-            В рамках этого сайта можно найти интересные статьи, описание популярных медико-эстетических процедур, показания и противопоказания к ним, их обсуждение среди пользователей, получить профессиональный совет или ответ на ваш вопрос.</p>
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg class="ad-brace-right" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 25 118" style="enable-background:new 0 0 25 118;" xml:space="preserve">
+          <path d="M24,116h-7.5c-4.4,0-4.5-4.5-4.5-5V78c0-0.3,0-8.4-3.2-12.6C6.6,62.5,4,60.2,2.6,59c1.4-1.2,4-3.5,6.2-6.4
+            C12,48.4,12,40.3,12,40V7c0-0.5,0.1-5,4.5-5H24c0.6,0,1-0.4,1-1s-0.4-1-1-1h-7.5C12,0,10,3.6,10,7v33c0,0.1,0,7.7-2.8,11.4
+            c-2.9,3.8-6.8,6.8-6.8,6.8l-0.1,0.1c0,0-0.1,0-0.1,0.1c0,0,0,0,0,0.1s-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2C0,59,0,59,0,59.1
+            c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0.1,0.2c0,0.1,0,0.1,0.1,0.2c0,0,0,0,0,0.1c0,0,0.1,0,0.1,0.1L0.4,60c0,0,3.9,3,6.8,6.8
+            C10,70.3,10,77.9,10,78v33c0,3.4,2,7,6.5,7H24c0.6,0,1-0.4,1-1S24.6,116,24,116z"/>
+          </svg>
+        </div>
+        <div class="slider middle">
+          <div class="slides">
+            <input type="radio" name="slider" id="r1" checked>
+            <input type="radio" name="slider" id="r2">
+            <input type="radio" name="slider" id="r3">
+            <div class="slide s1"><img src="images/banner.png" alt=""></div>
+            <div class="slide"><img src="images/banner.png" alt=""></div>
+            <div class="slide"><img src="images/banner.png" alt=""></div>
+            <div class="slider-navigation" id="active">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+              <label for="r3" class="bar"></label>
+            </div>
           </div>
-          
-
-        </content>
+        </div>
+        <div class="main-text">
+          <h1 class="title">Здравствуйте, ищете профессиональный подход?</h1>
+          <p class="site-description-text">Если вам 20-30-40-50-60-70 и вы ищете ответы на вопросы, как прекрасно выглядеть и уверенно себя чувстовать - значит вы попали по адресу!<br>
+          Вы на сайте центра медицинской косметологии, который готов стать вашим проводником в мире эстетической медицины.<br>
+          В рамках этого сайта можно найти интересные статьи, описание популярных медико-эстетических процедур, показания и противопоказания к ним, их обсуждение среди пользователей, получить профессиональный совет или ответ на ваш вопрос.</p>
+        </div>
       </main>
-
       <footer class="footer">
       </footer>
     </div>
-
     <script src="js/script.js"></script>
-
   </body>
 </html>
